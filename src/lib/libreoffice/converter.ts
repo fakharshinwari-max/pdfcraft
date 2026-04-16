@@ -35,6 +35,7 @@ const ASSET_VERSION = '20240212-3';
 // with correct Content-Encoding and MIME headers (required for WebAssembly streaming).
 const SOFFICE_WASM_FILE = 'soffice.wasm';
 const SOFFICE_DATA_FILE = 'soffice.data';
+const useChunked = false;
 
 function normalizeBasePath(path: string): string {
     return path.endsWith('/') ? path : `${path}/`;
@@ -229,7 +230,7 @@ export class LibreOfficeConverter {
                 // Check for the file itself or its chunk manifest
                 let res = await fetch(url, { method: 'HEAD' });
                 
-                if (!res.ok) {
+                if (!res.ok && useChunked) {
                     const manifestUrl = `${this.basePath}${file}.manifest.json?v=${ASSET_VERSION}`;
                     const mRes = await fetch(manifestUrl, { method: 'HEAD' });
                     if (mRes.ok) {
