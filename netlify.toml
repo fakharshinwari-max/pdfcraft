@@ -1,4 +1,4 @@
-# Netlify Configuration for PDFCraft
+# Netlify Configuration for Convertzpdf
 
 [build]
   command = "npm run build"
