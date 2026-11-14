@@ -1,7 +1,7 @@
-# PDFCraft
+# Convertzpdf
 
 <div align="center">
-  <img src="public/images/logo.png" alt="PDFCraft Logo" width="120" height="120" />
+  <img src="public/images/logo.png" alt="Convertzpdf Logo" width="120" height="120" />
   <h1>Professional PDF Tools</h1>
   <p>
     <strong>Free, Private & Browser-Based</strong>
@@ -13,7 +13,7 @@
 
 <div align="center">
 
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fpdfcraft.devtoolcafe.com%2Fen%2F)](https://pdfcraft.devtoolcafe.com/en/)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fconvertzpdf.com%2Fen%2F)](https://convertzpdf.com/en/)
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)
 ![React](https://img.shields.io/badge/React-19-blue?style=flat-square&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
@@ -23,7 +23,7 @@
 
 ## 📖 About
 
-**PDFCraft** is a comprehensive suite of PDF tools designed for privacy and performance. Unlike many online converters, PDFCraft processes your files entirely within your browser using WebAssembly technology. Your documents **never** leave your device, ensuring maximum security for your sensitive data.
+**Convertzpdf** is a comprehensive suite of PDF tools designed for privacy and performance. Unlike many online converters, Convertzpdf processes your files entirely within your browser using WebAssembly technology. Your documents **never** leave your device, ensuring maximum security for your sensitive data.
 
 This project is built with modern web technologies to provide a slick, app-like experience directly in the browser.
 
@@ -39,7 +39,7 @@ This project is built with modern web technologies to provide a slick, app-like 
 
 > ⚠️ **Early Development Notice**: This feature is currently in early development stage. You may encounter bugs or incomplete functionality. We appreciate your feedback and patience!
 
-PDFCraft includes a powerful **visual workflow editor** that allows you to chain multiple PDF operations together, creating automated processing pipelines.
+Convertzpdf includes a powerful **visual workflow editor** that allows you to chain multiple PDF operations together, creating automated processing pipelines.
 
 <div align="center">
   <img src="public/images/workflow-editor-screenshot.png" alt="Workflow Editor Screenshot" width="800" />
@@ -211,7 +211,7 @@ To run this project locally, follow these steps:
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/PDFCraftTool/pdfcraft.git
+    git clone https://github.com/fakharshinwari-max/pdfcraft.git
     cd pdfcraft
     ```
 
@@ -238,30 +238,9 @@ To run this project locally, follow these steps:
 
 ### 🐳 Docker
 
-PDFCraft provides both pre-built Docker images and Docker Compose for flexible deployment options.
+Convertzpdf can be built and run with Docker Compose.
 
-#### Option 1: Use Pre-built Image (Recommended)
-
-The easiest way to run PDFCraft is using our pre-built image from GitHub Container Registry:
-
-```bash
-# Pull the latest image
-docker pull ghcr.io/pdfcrafttool/pdfcraft:latest
-
-# Run the container
-docker run -d -p 8080:80 --name pdfcraft ghcr.io/pdfcrafttool/pdfcraft:latest
-```
-
-Open [http://localhost:8080](http://localhost:8080) to access PDFCraft.
-
-**Available tags:**
-| Tag | Description |
-|-----|-------------|
-| `latest` | Latest stable release from main branch |
-| `v1.0.0` | Specific version (semantic versioning) |
-| `sha-abc1234` | Specific commit |
-
-#### Option 2: Build from Source with Docker Compose
+#### Build from Source with Docker Compose
 
 If you want to build from source or need to modify the code:
 
@@ -269,7 +248,7 @@ If you want to build from source or need to modify the code:
 
 ```bash
 # Clone the repository
-git clone https://github.com/PDFCraftTool/pdfcraft.git
+git clone https://github.com/fakharshinwari-max/pdfcraft.git
 cd pdfcraft
 
 # Development mode (with hot reload)
@@ -298,7 +277,7 @@ docker compose down
 
 ## 🚀 Production Deployment Guide
 
-PDFCraft is configured for static export (`output: 'export'`), which means it can be deployed to any service that supports static website hosting without requiring a Node.js server.
+Convertzpdf is configured for static export (`output: 'export'`), which means it can be deployed to any service that supports static website hosting without requiring a Node.js server.
 
 > 📖 **For comprehensive deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md)**
 
@@ -351,16 +330,16 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 🤝 Acknowledgements
 
-PDFCraft stands on the shoulders of giants. We gratefully acknowledge [BentoPDF](https://github.com/alam00000/bentopdf) for their pioneering work in privacy-first, client-side PDF tools.
+Convertzpdf is a modified version of [PDFCraft](https://github.com/PDFCraftTool/pdfcraft) by the PDFCraft Team, licensed under AGPL-3.0. Convertzpdf stands on the shoulders of giants. We gratefully acknowledge [BentoPDF](https://github.com/alam00000/bentopdf) for their pioneering work in privacy-first, client-side PDF tools.
 
-Their project served as a significant inspiration and reference for our core logic. While PDFCraft has been re-engineered for the Next.js ecosystem and extends functionality with unique features like the *Workflow Editor*, we deeply respect the foundation laid by the BentoPDF team.
+Their project served as a significant inspiration and reference for our core logic. While Convertzpdf has been re-engineered for the Next.js ecosystem and extends functionality with unique features like the *Workflow Editor*, we deeply respect the foundation laid by the BentoPDF team.
 
 ## 📄 License
 
-This project is licensed under the AGPL-3.0 License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the AGPL-3.0 License - see the [LICENSE](LICENSE) file for details. It is based on PDFCraft (AGPL-3.0), which is itself based on BentoPDF (AGPL-3.0). The complete source of this modified version is available in this repository.
 
 ---
 
 <div align="center">
-  Built with ❤️ by the PDFCraft Team
+  Built by Fakhar Shinwari, based on PDFCraft
 </div>
